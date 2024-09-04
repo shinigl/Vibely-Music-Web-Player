@@ -1,0 +1,86 @@
+.border {
+    border: 2px solid rgb(87, 204, 99);
+    margin: 2px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.bg-bg {
+      background-color: hsla(251, 18%, 88%, 1);  
+    
+
+    color: black;
+}
+
+.invert {
+    filter: invert(0);
+}
+
+.bg-inner {
+     background-color: hsla(320, 12%, 90%, 1); 
+   
+   
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.container .right {
+    margin: 15px;
+    position: relative;
+    right: 20px;
+    margin-right: -10px;
+
+}
+
+.playlist {
+    padding: 20px;
+
+}
+
+.slider{
+    accent-color:orange;
+    
+}
+
+/* Custom scrollbar styles */
+.cardcont::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.cardcont::-webkit-scrollbar-track {
+    background: transparent;
+    /* Track background color */
+}
+
+.cardcont::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    /* Thumb color and transparency */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.cardcont::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+    /* Thumb color on hover */
+}

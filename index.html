@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="container flex bg-bg">
+        <div class="left ">
+            <div class="close">
+                <img class="invert" src="img/close.svg " alt="">
+            </div>
+            <div class="home bg-inner rounded m-1 p-1">
+                <div class="logo">
+                    <h1 >Vibely</h1>
+                </div>
+                <ul class="hs">
+                    <li><img class="invert search-icon" src="img/home.svg" alt="Home">Home</li>
+                    <li class="s"><img src="img/search.svg" alt=""> Search </li>
+                </ul>
+            </div>
+            <div class="library bg-inner rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/libr.svg" alt=""> </img>
+
+                    <h2>Song Library</h2>
+
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="right bg-inner rounded m-1 ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburCont">
+
+                        <img class="invert ham" src="img/ham.svg" alt="">
+                    </div>
+                    <div class="find">
+                        <img style="width: 40px;" class="invert" src="img/search.svg" alt="search">
+                        <input type="text" class="search-box" id="search-input" placeholder="Search">
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <button class="btn-1">Sign Up</button>
+                    <button class="btn-2">Log In</button>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <h1>Trending Playlists</h1>
+
+                <div class="cardcont">
+                    <div data-folder="bollywood" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6659b73da2de136c6ea8854b/COLLECTION_27239618061198.png"
+                            alt="">
+                        <h2> Bollywood Central </h2>
+                        <p>Top Bollywood Songs</p>
+                    </div>
+
+                    <div data-folder="cs" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-zion/zion/1696452544852-Arijit_Singh.png"
+                            alt="">
+                        <h2> Mega Hit Mix </h2>
+                        <p> A mega mix of 75 hit songs</p>
+                    </div>
+
+                    <div data-folder="yoyo" class="card">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/22/67/5b/22675bc4-b8be-e5bf-9d83-fd0094e2c816/pr_source.png/380x380cc.webp"
+                            alt="">
+                        <h2>Honey Singh Songs</h2>
+                        <p> Top HIT songs from YO YO</p>
+                    </div>
+                    <div data-folder="bigDaws" class="card">
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/00602468023883_20240707000257597/1720312205860/24UMGIM70977_T1_cvrart.jpg"
+                            alt="">
+                        <h2> Big Dawgs </h2>
+                        <p> HanumanKind </p>
+                    </div>
+                    <div data-folder="deadpool" class="card">
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/00050087555351_20240724074737321/1721808627325/24UMGIM77986_T1_cvrart.jpg"
+                            alt="">
+                        <h2> Bye-Bye </h2>
+                        <p>Deadpool and Wolverine</p>
+                    </div>
+
+                    <div data-folder="aayi" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_saregama/20240801205737000/8907212018256/1722528920624/resources/8907212018256.jpg"
+                            alt="">
+                        <h2> Aaya Nai </h2>
+                        <p> Stree 2</p>
+                    </div>
+
+                    <div data-folder="Taras" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_zeemusic/2024-05/27/04-01/ZMC08401.jpg"
+                            alt="">
+                        <h2> Taras </h2>
+                        <p> Munjya</p>
+                    </div>
+
+                    <div data-folder="charlie" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_wmg/music/update/075679884343/1656315047/srch_wmg_A10302B0004125406P.jpg"
+                            alt="">
+                        <h2> Charlie Puth </h2>
+                        <p> Bangers from Charlie</p>
+                    </div>
+
+                    <div data-folder="bel" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1485874711/srch_universalmusic_00602557443325-USUM71700626.jpg"
+                            alt="">
+                        <h2> Believer </h2>
+                        <p>Imagine Dragons</p>
+                    </div>
+
+                    <div data-folder="shubh" class="card">
+                        <div class="playbtn">
+                            <img src="img/playbtn.svg" alt="">
+                        </div>
+                        <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_orchard/20230802095300_197189603969/1690985418364/resources/197189603969.jpg"
+                            alt="">
+                        <h2> One love </h2>
+                        <p> Shubh</p>
+                    </div>
+
+
+
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="track">
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="spotifyBtn">
+
+
+                            <img id="prev" src="img/prev.svg" alt="">
+                            <img id="play" src="img/play.svg" alt="">
+                            <img id="next" src="img/next.svg" alt="">
+
+                        </div>
+
+                        <div class="vol">
+                            <img src="img/volume.svg" alt="">
+                            <div class="volrange">
+                                <input type="range" class="slider" name="Volume">
+                            </div>
+                        </div>
+
+                        <div class="songtime">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="fc">
+
+                <div class="foot">
+
+                    <div class="footCont">
+                        <h5>Company</h5>
+                        <a href="">About</a>
+                        <a href="">Jobs</a>
+                        <a href="">For the Record</a>
+                    </div>
+                </div>
+
+                <div class="foot">
+
+                    <div class="footCont">
+                        <h5>Communities</h5>
+                        <a href="">About</a>
+                        <a href="">Jobs</a>
+                        <a href="">For the Record</a>
+                    </div>
+                </div>
+
+                <div class="foot">
+
+                    <div class="footCont">
+                        <h5>Useful Links</h5>
+                        <a href="">About</a>
+                        <a href="">Jobs</a>
+                        <a href="">For the Record</a>
+                    </div>
+                </div>
+                <div class="foot">
+
+                    <div class="footCont">
+                        <h5>Plans</h5>
+                        <a href="">About</a>
+                        <a href="">Jobs</a>
+                        <a href="">For the Record</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <img class="invert" src="img/insta.svg" alt="">
+                    <img class="invert" src="img/fb.svg" alt="">
+                    <img class="invert" src="img/twitter.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="sep">
+
+            </div>
+
+            <div class="sepCont">
+                <a href=""> Legal </a>
+                <a href=""> Cookies </a>
+                <a href=""> Privacy Policies </a>
+                <a href=""> Accessibility </a>
+                <p> &copy;COPYRIGHT</p>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
